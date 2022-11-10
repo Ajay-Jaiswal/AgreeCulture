@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "8fd8f9a7-4bf8-47fd-9343-73e7467f7209",
+		"name": "AgreeCulture",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20408746"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create blog",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzZiZjc0NTYxMmUyMmZhNDI2YTY1NmUiLCJpYXQiOjE2NjgwMjE5NDh9.r6P_H3gbqaFhf40EK3zPv9UZ0V3VB2NAnO2tr7mBggc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n    \"userId\": \"636bf745612e22fa426a656e\",\r\n    \"organization\": \"agro indian\",\r\n    \"property\" : \"seed cloning\",\r\n    \"region\" : \"rural\",\r\n    \"field\" : \"black soil\",\r\n    \"crop_cycle_property\": \"6 month\",\r\n    \"crop_cycle_field\" : \"half season\",\r\n    \"crop\" : \"wheat\",\r\n    \"isPublished\": true\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/createblog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"createblog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blog",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
